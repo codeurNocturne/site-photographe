@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pierre Dubois - Photographe Professionnel</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- CSS personnalisé -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <i class="fas fa-camera"></i> NYA MARIUS
+            </a>
+            <button class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#accueil" class="nav-link">Accueil</a></li>
+                <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#apropos" class="nav-link">À propos</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Section Accueil/Hero -->
+    <section id="accueil" class="hero-section">
+        <div class="hero-content">
+            <h1 class="hero-title">Capturez vos moments précieux</h1>
+            <p class="hero-subtitle">Photographe professionnel spécialisé en mariage, portrait et événements</p>
+            <button class="btn-primary" id="contactBtn">
+                <i class="fab fa-whatsapp"></i> Réserver une séance
+            </button>
+        </div>
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- Section Portfolio -->
+    <section id="portfolio" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Mon Portfolio</h2>
+            <p class="section-subtitle">Découvrez mes réalisations</p>
+            
+            <div class="portfolio-filters">
+                <button class="filter-btn active" data-filter="all">Tous</button>
+                <button class="filter-btn" data-filter="mariage">Mariages</button>
+                <button class="filter-btn" data-filter="portrait">Portraits</button>
+                <button class="filter-btn" data-filter="evenement">Événements</button>
+            </div>
+            
+            <div class="portfolio-grid" id="portfolioGrid">
+                <!-- Les images seront chargées dynamiquement -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Services -->
+    <section id="services" class="section">
+        <div class="container">
+            <h2 class="section-title">Mes Services</h2>
+            <p class="section-subtitle">Des prestations adaptées à vos besoins</p>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-ring"></i>
+                    </div>
+                    <h3>Mariages</h3>
+                    <p>Capturer chaque moment magique de votre journée spéciale avec discrétion et créativité.</p>
+                    <ul class="service-list">
+                        <li>Séance pré-wedding</li>
+                        <li>Couverture complète</li>
+                        <li>Album photo premium</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h3>Portraits</h3>
+                    <p>Séances portrait professionnelles en studio ou en extérieur pour immortaliser votre personnalité.</p>
+                    <ul class="service-list">
+                        <li>Portrait individuel</li>
+                        <li>Portrait de famille</li>
+                        <li>Portrait corporate</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-glass-cheers"></i>
+                    </div>
+                    <h3>Événements</h3>
+                    <p>Couverture photo d'événements corporatifs et privés pour garder un souvenir vivant.</p>
+                    <ul class="service-list">
+                        <li>Événements d'entreprise</li>
+                        <li>Anniversaires</li>
+                        <li>Galas et soirées</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section À propos -->
+    <section id="apropos" class="section bg-light">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-content">
+                    <h2 class="section-title">À propos de moi</h2>
+                    <p class="about-text">Photographe professionnel avec 10 ans d'expérience, je suis passionné par l'art de capturer l'émotion et la beauté dans chaque instant.</p>
+                    <p class="about-text">Mon approche combine technique professionnelle et sens artistique pour créer des images authentiques et mémorables.</p>
+                    
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <h3 class="stat-number">500+</h3>
+                            <p>Clients satisfaits</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3 class="stat-number">10+</h3>
+                            <p>Années d'expérience</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3 class="stat-number">1500+</h3>
+                            <p>Séances réalisées</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                         alt="Pierre Dubois photographe">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Contact -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title">Contactez-moi</h2>
+            <p class="section-subtitle">Discutons de votre projet</p>
+            
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Téléphone</h3>
+                            <p>+237 689034220</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p>contact@pierredubois.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Studio</h3>
+                            <p>123 Avenue des Champs-Élysées<br>75008 Paris, France</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h3>Horaires</h3>
+                            <p>Lun-Ven: 9h-18h<br>Sam: 10h-16h</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" placeholder="Votre nom" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" placeholder="Votre email" required>
+                        </div>
+                        <div class="form-group">
+                            <select id="service" required>
+                                <option value="">Type de service</option>
+                                <option value="mariage">Mariage</option>
+                                <option value="portrait">Portrait</option>
+                                <option value="evenement">Événement</option>
+                                <option value="autre">Autre</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" rows="5" placeholder="Votre message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary">
+                            <i class="fas fa-paper-plane"></i> Envoyer le message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <i class="fas fa-camera"></i> Pierre Dubois
+                </div>
+                <p class="footer-text">Capturer la beauté, immortaliser les moments</p>
+                
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-pinterest"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                </div>
+                
+                <p class="copyright">© 2024 Pierre Dubois Photographie. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
